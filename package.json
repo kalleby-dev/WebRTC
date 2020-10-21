@@ -1,0 +1,38 @@
+{
+  "name": "video-chat-rtc",
+  "version": "1.0.0",
+  "description": "Simple video chat, using WebRTC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "eslint": "eslint ./src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalleby-dev/WebRTC.git"
+  },
+  "keywords": [
+    "web",
+    "rtc",
+    "video",
+    "chat",
+    "communication"
+  ],
+  "author": "Kalleby Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalleby-dev/WebRTC/issues"
+  },
+  "homepage": "https://github.com/kalleby-dev/WebRTC#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.6"
+  }
+}

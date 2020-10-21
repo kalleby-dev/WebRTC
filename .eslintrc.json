@@ -1,0 +1,8 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+      "new-cap": ["error", { "newIsCap": false }],
+      "comma-dangle": ["warn", "always-multiline"]
+      //"no-console": ["off"]
+  }
+}
