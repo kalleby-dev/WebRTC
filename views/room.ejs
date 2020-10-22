@@ -7,6 +7,13 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        const ROOM_ID = "<%= roomId %>";
+    </script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="js/script.js" defer></script>
+    
 </head>
 <body>
     <h1>WebRTC - Video Chat</h1>
@@ -18,7 +25,6 @@
         <video id="local-video" class="video" autoplay></video>
         <button id="btn-start" class="btn btn-primary">Open Camera</button>
     </div>
-
-    <script src="js/main.js"></script>
+    
 </body>
 </html>
