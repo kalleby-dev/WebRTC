@@ -21,7 +21,14 @@ io.on('connection', sock => {
   sock.on('join-room', (roomId, userId) =>{
     sock.join(roomId);
     sock.to(roomId).broadcast.emit('user-connected', userId);
-  })
+
+    sock.on('disconnected', () => {
+      sock.to(roomId).broadcast.emit('user-disconnected', userId);
+    });
+
+  });
+
+
 });
 
 server.listen(8000, () => console.log('Server is listening on port 8000'));
